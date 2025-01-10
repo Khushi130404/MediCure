@@ -1,3 +1,7 @@
+body {
+   transform: scale(0.8);
+}
+
 .homepage {
     background-color: #ffffff;
     display: flex;
@@ -751,7 +755,7 @@
 }
 
 .box .hero {
-    
+
     width: 1600px;
     height: 822px;
     top: 0;
