@@ -1,5 +1,5 @@
 body {
-   transform: scale(0.8);
+   transform: scale(0.7);
 }
 
 .homepage {
@@ -618,6 +618,7 @@ body {
     height: 822px;
     top: 129px;
     left: 0;
+    background-image: url('/img/welcome.jpg');
 }
 
 .homepage .header {
