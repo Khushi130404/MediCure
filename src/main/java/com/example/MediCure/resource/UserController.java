@@ -22,7 +22,7 @@ public class UserController {
     @GetMapping(value = "/")
     public String getHomePage()
     {
-        return "registration_2";
+        return "homepage_3";
     }
 
     @PostMapping("/logreg")
