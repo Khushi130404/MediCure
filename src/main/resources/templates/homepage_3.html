@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta charset="UTF-8">
     <title>Home-Page</title>
@@ -74,7 +77,7 @@
         <div data-layer="bg" class="Bg" style="width: 1600px; height: 856px; left: 0px; top: 0px; position: absolute; background: #F9F9F7"></div>
         <div data-layer="content" class="Content" style="width: 599px; height: 566px; left: 152px; top: 120px; position: absolute; justify-content: flex-start; align-items: center; gap: 90px; display: inline-flex">
             <div data-layer="Image" class="Image" style="flex: 1 1 0; align-self: stretch; background: #DBEAFE; border-radius: 12px; overflow: hidden; justify-content: center; align-items: center; display: flex">
-                <img data-layer="all-heroes-wear-capes_52683-37710 1" class="AllHeroesWearCapes52683377101" style="width: 599px; height: 566px" src="https://via.placeholder.com/599x566" />
+                <img data-layer="all-heroes-wear-capes_52683-37710 1" class="AllHeroesWearCapes52683377101" style="width: 599px; height: 566px" th:src="@{/css/img/welcome.jpg}"/>
             </div>
             <div data-layer="text" class="Text" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
                 <div data-layer="title" class="Title" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
