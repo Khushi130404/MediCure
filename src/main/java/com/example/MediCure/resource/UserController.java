@@ -61,17 +61,17 @@ public class UserController {
 
     @GetMapping(value = "/registerPage")
     public String openRegister(){
-        return "register";
+        return "register_user";
     }
 
     @GetMapping(value = "/loginPage")
     public String openLogin(){
-        return "loginUser";
+        return "login_user";
     }
 
     @GetMapping(value = "/homePage")
     public String openHome(){
-        return "home";
+        return "home_2s";
     }
 
     @GetMapping(value = "/contactPage")
