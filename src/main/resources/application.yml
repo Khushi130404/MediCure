@@ -8,3 +8,8 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+  thymeleaf:
+    enabled: true
+  web:
+    resources:
+      static-locations: classpath:/static/
