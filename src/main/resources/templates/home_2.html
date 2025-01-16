@@ -1,13 +1,26 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>MediCure</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form action="/user/logReg" method="post" name="user_login_form">-->
+<!--      <input type="submit" name="sub" value="Login"/>-->
+<!--      <input type="submit" name="sub" value="Register"/>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
-<html lang="en"
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:th="http://www.thymeleaf.org"
+       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link th:href="@{/css/style.css}" rel="stylesheet" />
-    <link th:href="@{/css/globals.css}" rel="stylesheet" />
-    <link th:href="@{/css/styleguide.css}" rel="stylesheet" />
+    <link th:href="@{/css/home/style.css}" rel="stylesheet" />
+    <link th:href="@{/css/home/globals.css}" rel="stylesheet" />
+    <link th:href="@{/css/home/styleguide.css}" rel="stylesheet" />
 </head>
 <body>
 <div class="homepage">
@@ -51,7 +64,8 @@
             </footer>
             <div class="logo-title">
                 <div class="overlap-group">
-                    <img class="website-logo" th:src="@{css/img/image.png}" />
+                    <img class="website-logo" src="img/image.png" />
+
                     <div class="website-title">MediCure</div>
                 </div>
             </div>
@@ -59,7 +73,7 @@
         <div class="about">
             <div class="content-2">
                 <div class="img">
-                    <div class="image"><img class="all-heroes-wear" th:src="@{css/img/heroes.jpg}" /></div>
+                    <div class="image"><link th:href="@{/img/all-heroes-wear-capes_52683-37710.jpg}" rel="icon" class="all-heroes-wear"/></div>
                 </div>
                 <div class="text">
                     <div class="title">
@@ -86,7 +100,7 @@
                             <div class="icon">
                                 <div class="overlap-group-2">
                                     <div class="ellipse"></div>
-                                    <img class="img-2" th:src="@{img/access.png}" />
+                                    <img class="img-2"  alt=""/>
                                 </div>
                             </div>
                             <div class="text-3">
@@ -101,7 +115,7 @@
                             <div class="icon">
                                 <div class="overlap-group-2">
                                     <div class="ellipse"></div>
-                                    <img class="add-user-male" th:src="@{img/add-user-male.png}" />
+                                    <img class="add-user-male" src="img/add-user-male.png" />
                                 </div>
                             </div>
                             <div class="text-3">
@@ -116,7 +130,7 @@
                             <div class="icon">
                                 <div class="overlap-group-2">
                                     <div class="ellipse"></div>
-                                    <img class="img-2" th:src="@{img/test-account.png}" />
+                                    <img class="img-2" src="img/test-account.png" />
                                 </div>
                             </div>
                             <div class="text-3">
@@ -131,7 +145,7 @@
                             <div class="icon">
                                 <div class="overlap-group-2">
                                     <div class="ellipse"></div>
-                                    <img class="timesheet" th:src="@{img/timesheet.png}" />
+                                    <img class="timesheet" src="img/timesheet.png" />
                                 </div>
                             </div>
                             <div class="text-3">
@@ -154,7 +168,12 @@
                             <p class="div-welcome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptatum!</p>
                         </div>
                         <div class="buttons">
-                            <button class="button-welcome"><div class="book-an-appointment">Book An Appointment</div></button>
+                            <div class="container-book">
+                                <a href="home.html" style="text-decoration: none;">
+                                    <p class="animated-word" >Book An Appointment</p>
+                                </a>
+                            </div>
+                            <!--                            <button class="button-welcome"><div class="book-an-appointment">Book An Appointment</div></button>-->
                         </div>
                     </div>
                 </div>
@@ -163,16 +182,16 @@
         </div>
         <header class="header">
             <div class="pages-link">
-                <div class="profile"><img class="male-user" th:src="@{css/img/Profile.png}" /></div>
-                <div class="register"><div class="text-wrapper-10">Register</div></div>
-                <div class="login"><div class="text-wrapper-10">Login</div></div>
-                <div class="contact"><div class="text-wrapper-10">Contact</div></div>
-                <div class="about-2"><div class="text-wrapper-10">About</div></div>
-                <div class="home"><div class="text-wrapper-10">Home</div></div>
+                <div class="profile"><img class="male-user" src="img/profile_white.png" /></div>
+                <div class="register"><div class="text-wrapper-10"><a href="/user/registerPage"  style="text-decoration : none;" class="text-wrapper-10">Register</a></div></div>
+                <div class="login"><div class="text-wrapper-10"><a href="/user/loginPage"  style="text-decoration : none;"  class="text-wrapper-10">Login</a></div></div>
+                <div class="contact"><div class="text-wrapper-10"><a href="/user/contactPage"  style="text-decoration : none;"  class="text-wrapper-10">Contact</a></div></div>
+                <div class="about-2"><div class="text-wrapper-10"><a href="/user/aboutPage"  style="text-decoration : none;"  class="text-wrapper-10">About</a></div></div>
+                <div class="home"><div class="text-wrapper-10"><a href="/user/homePage"  style="text-decoration : none;"  class="text-wrapper-10">Home</a></div></div>
             </div>
             <div class="overlap-group-wrapper">
                 <div class="overlap-group">
-                    <img class="website-logo" th:src="@{css/img/logo.png}" />
+                    <img class="website-logo" alt=""/>
                     <div class="website-title-2">MediCure</div>
                 </div>
             </div>

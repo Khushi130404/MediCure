@@ -58,4 +58,34 @@ public class UserController {
         }
         return "home";
     }
+
+    @GetMapping(value = "/registerPage")
+    public String openRegister(){
+        return "register";
+    }
+
+    @GetMapping(value = "/loginPage")
+    public String openLogin(){
+        return "loginUser";
+    }
+
+    @GetMapping(value = "/homePage")
+    public String openHome(){
+        return "home";
+    }
+
+    @GetMapping(value = "/contactPage")
+    public String openContact(){
+        return "contact";
+    }
+
+    @GetMapping(value = "/aboutPage")
+    public String openAbout(){
+        return "about";
+    }
+
+    @GetMapping(value = "/profilePage")
+    public String openProfile(){
+        return "profile";
+    }
 }
