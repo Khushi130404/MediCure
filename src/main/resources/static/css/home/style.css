@@ -461,6 +461,7 @@ body {
     height: 90px;
     top: 5px;
     left: 5px;
+    background-image : url(./img/access.png);
 }
 
 .homepage .text-3 {
@@ -623,8 +624,8 @@ body {
     width: 1600px;
     height: 822px;
     top: 129px;
+    background: image-url('./img/welcome.jpg');
     left: 0;
-    background-image: url('/img/welcome.jpg');
 }
 
 .homepage .header {
@@ -762,13 +763,14 @@ body {
 }
 
 .box .hero {
-
-    width: 1600px;
+    position:relative;
+    width: 1601px;
     height: 822px;
-    top: 0;
-    left: 0;
+    left: -1px;
+    top: -25px;
     background-image: url(./img/welcome.jpg);
     background-size: 100% 100%;
+
 }
 
 .box .title {
@@ -854,6 +856,7 @@ body {
     border-radius: 118px;
     border: 1.5px solid;
     border-color: #ffffff;
+    background-image: url(./img/welcome.jpg);
 }
 
 .box .book-an-appointment {
@@ -869,6 +872,7 @@ body {
     line-height: 24px;
     white-space: nowrap;
 }
+
 .box .book-an-appointment:hover {
     position: relative;
     width: fit-content;
@@ -881,4 +885,54 @@ body {
     letter-spacing: 0;
     line-height: 24px;
     white-space: nowrap;
+}
+
+.container-book {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+
+.animated-word {
+    font-family: Helvetica;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    outline: 3px solid;
+    outline-color: rgba(71, 126, 232, 0.5);
+    outline-offset: 10px;
+    transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(14, 94, 253, 0.575);
+    z-index: -1;
+    transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+    filter: none;
+}
+
+.animated-word:hover {
+    color: rgb(255, 255, 255);
+    outline-color: rgba(71, 126, 232, 0);
+    outline-offset: 50px;
+}
+
+.animated-word:hover::before {
+    filter: blur(8px);
+    background: rgba(14, 94, 253, 0.611);
 }
